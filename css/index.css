@@ -1,0 +1,582 @@
+
+/**body {
+  background-image: url("img/Homepage1.jpg");
+
+}**/
+
+* {
+  box-sizing: border-box;
+}
+
+/**************Fonts*******************/
+@font-face {
+  font-family: simplifica;
+  src: url(SIMPLIFICA.ttf);
+}
+
+@font-face {
+  font-family: vds;
+  src: url(VDS_Thin.ttf);
+}
+
+@font-face {
+  font-family: vds_bold;
+  src: url(VDS_Compensated_Light.ttf);
+}
+
+/***********Revealing animation on scroll**************/
+.fromRightIn
+{
+	transition: transform 0.4s ease, opacity 0.4s ease;
+	transform: translate(0,0);
+	opacity: 1.0;
+}
+
+.fromRightOut
+{
+	transition: transform 0.4s ease, opacity 0.4s ease;
+	transform: translate(10px, 0);
+	opacity: 0.0;
+}
+
+.fromLeftIn
+{
+	transition: transform 0.4s ease, opacity 0.4s ease;
+	transform: translate(0,0);
+	opacity: 1.0;
+}
+
+.fromLeftOut
+{
+	transition: transform 0.4s ease, opacity 0.4s ease;
+	transform: translate(-10px,0);
+	opacity: 0.0;
+}
+
+.fromBottomIn
+{
+	transition: transform 0.4s ease, opacity 0.4s ease;
+	transform: translate(0,0);
+	opacity: 1.0;
+}
+
+.fromBottomOut
+{
+	transition: transform 0.4s ease, opacity 0.4s ease;
+	transform: translate(0,10px);
+	opacity: 0.0;
+}
+
+/*******************General*********************/
+
+.whole-page {
+  margin-left: 10vh;
+  margin-right: 6vh;
+}
+
+
+/*********Homepage*************/
+
+.page-1 {
+  height: 740px;
+  background-image: linear-gradient(to bottom right, rgb(185, 227, 115, 0.4) 50%, rgb(247, 228, 107, 0.4) 50%);
+}
+
+/***********Navbar*************/
+.nav-text {
+  font-size: 20px;
+  margin-left: 40px;
+  color: #3a3a3a;
+  padding-top: 25px;
+  font-family: vds;
+  letter-spacing: 2px;
+  border-bottom: 1.5px solid;
+  padding-bottom: 0.2px;
+}
+
+#logo {
+  width: 60px;
+  height: 60px;
+  margin: 15px 5px 0 25px;
+}
+
+.background {
+  /**background-image: url("img/background-home1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;**/
+  /**background-image: linear-gradient(to bottom right, rgb(215, 255, 175), rgb(175, 255, 253));**/
+  /* background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(183, 254, 236), rgb(250, 184, 170)); */
+  height: 600px;
+}
+
+.intro_background {
+
+}
+
+.name {
+   font-size: 95px;
+   font-weight: 580;
+   text-align: center;
+   color: #3a3a3a;
+   letter-spacing: 7px;
+   font-family: simplifica;
+   margin-top: 80px !important;
+}
+
+.intro {
+  margin-top: 10vh;
+  font-size: 24px;
+  color: #424242;
+  font-family: simplifica;
+  text-align: center;
+  letter-spacing: 4px;
+  /* width: 700px;
+  height: 140px;
+  background: linear-gradient(to bottom right, rgb(182, 255, 236, 0.3) 50%, rgb(100, 252, 201, 0.3) 50%);
+  background-color:  rgb(182, 255, 236, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px; */
+}
+
+.animation {
+    opacity: 0;
+    animation: fade-in-right ease 1.6s forwards;
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/************************Me & Design Page*******************************/
+
+.page-2 {
+  height: 50vh;
+}
+
+.box-1 {
+  margin-top: 10vh;
+}
+
+.title-1 {
+  color: #3a3a3a;
+  font-size: 32px;
+  font-family: vds_bold;
+  text-align: center;
+  padding-top: 100px;
+  background-image: linear-gradient(rgb(215, 255, 175), rgb(175, 255, 253));
+  margin-left: -60px;
+}
+
+.text-1 {
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  letter-spacing: 1px;
+  color: #424242;
+  text-indent: 18px;
+  font-size: 20px;
+  font-family: vds;
+  letter-spacing: 2px;
+}
+
+/***********************Skeill & Knowledge**********************/
+
+
+.box-4 {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  background-color: #f44242;
+  border-radius: 20px;
+  padding: 25px;
+  position: relative;
+  z-index: -1;
+}
+
+/******************Skill bar*************************/
+
+.page-3 {
+  height: 50vh;
+}
+
+.box-2 {
+  margin-left: 20px;
+  margin-top: 5vh;
+}
+
+.title-2 {
+  color: #3a3a3a;
+  font-size: 36px;
+  font-family: vds_bold;
+  text-align: center;
+  padding-top: 15vh;
+  background-image: linear-gradient(rgb(215, 255, 175), rgb(175, 255, 253));
+}
+
+.container {
+  width: 50%;
+  background-color: #ddd;
+  margin-left: 45%;
+
+}
+
+.skill-1 {
+  color: #3a3a3a;
+  float: left;
+  font-family: vds;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+
+.bar-1 {
+  width: 90%;
+  background-color: #3a3a3a;
+  height: 20px;
+  margin-left: -4%;
+  margin-top: 1vh;
+}
+
+.skill-2 {
+  color: #3a3a3a;
+  font-family: vds;
+  letter-spacing: 1px;
+  font-size: 24px;
+  float: left;
+  position: absolute;
+
+}
+
+.bar-2 {
+  background-color: #3a3a3a;
+  height: 20px;
+  width: 75%;
+  margin-left: -4%;
+  margin-top: 1vh;
+}
+
+.skill-3 {
+  color: #3a3a3a;
+  font-family: vds;
+  letter-spacing: 1px;
+  font-size: 24px;
+  float: left;
+  position: absolute;
+}
+
+.bar-3 {
+  background-color: #3a3a3a;
+  height: 20px;
+  width: 75%;
+  margin-left: -4%;
+  margin-top: 1vh;
+}
+
+.skill-4 {
+  color: #3a3a3a;
+  font-family: vds;
+  letter-spacing: 1px;
+  font-size: 24px;
+  float: left;
+  position: absolute;
+}
+
+.bar-4 {
+  background-color: #3a3a3a;
+  height: 20px;
+  width: 65%;
+  margin-left: -4%;
+  margin-top: 1vh;
+}
+
+.skill-5 {
+  color: #3a3a3a;
+  font-family: vds;
+  letter-spacing: 1px;
+  font-size: 24px;
+  float: left;
+  position: absolute;
+}
+
+.bar-5 {
+  background-color: #3a3a3a;
+  height: 20px;
+  width: 60%;
+  left: 0;
+  margin-top: 1vh;
+  margin-left: -4%;
+}
+
+
+/******************Project page***********************/
+.background-project{
+  background-image: url("img/background-project1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 70px;
+  padding-top: 100px;
+}
+
+.page-4 {
+  height: 100vh;
+}
+/*
+.grid-container {
+  display: grid;
+  grid-template-columns: 32% auto 32% 32%;
+  grid-template-rows: 18vh 18vh 6vh 18vh 6vh 18vh 18vh 18vh;
+  display: -ms-grid;
+  -ms-grid-columns: 32% auto 32% 32%;
+} */
+
+.box-3 {
+  margin-top: 90px;
+}
+
+
+.title-3 {
+  color: #3a3a3a;
+  font-size: 46px;
+  font-family: vds_bold;
+  /* grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column-start: 1;
+  -ms-grid-column-end: 2;
+  -ms-grid-row-start: 1;
+  -ms-grid-row-end: 3; */
+  margin-top: -90px;
+  margin-left: 80px;
+  letter-spacing: 4px;
+}
+
+
+
+ #description-1 {
+   text-align: center;
+   font-weight: 400;
+   line-height: 30px;
+   letter-spacing: 1px;
+   color: #424242;
+   font-size: 20px;
+   font-family: vds;
+   letter-spacing: 2px;
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+
+
+ .project-1 {
+   width: 300px;
+   height: 300px;
+   /* margin: 50px 25px 0 auto; */
+ }
+
+ .project-2 {
+   width: 300px;
+   height: 300px;
+   background-color: #64FCC9;
+   margin: 50px auto 0 auto;
+ }
+
+ .project-3 {
+   width: 300px;
+   height: 300px;
+   background-color: #B6FFEC;
+   margin: 50px auto 0 25px;
+ }
+
+ #description-2 {
+   text-align: center;
+   font-weight: 400;
+   line-height: 30px;
+   letter-spacing: 1px;
+   color: #424242;
+   font-size: 20px;
+   font-family: vds;
+   letter-spacing: 2px;
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+
+ #description-3 {
+   text-align: center;
+   font-weight: 400;
+   line-height: 30px;
+   letter-spacing: 1px;
+   color: #424242;
+   font-size: 20px;
+   font-family: vds;
+   letter-spacing: 2px;
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+
+/***************My photo***********************/
+ .my-photo {
+   border-radius: 50%;
+   height: 350px;
+   width: 350px;
+   display: block;
+   margin-left: 35%;
+   margin-right: auto;
+   margin-top: 80px;
+   margin-bottom: 130px;
+ }
+
+/***************What I love about myself****************/
+
+
+.background-love{
+  /* background-image: url("img/background-love.jpg"); */
+  background-image: linear-gradient(rgb(215, 255, 175), rgb(175, 255, 253));
+  margin-top: 80px;
+
+}
+
+.title-4 {
+  /* font-size: 24px;
+  font-weight: 500;
+  margin-top: 80px;
+  margin-left: -60px;
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg); */
+  font-family: vds;
+  color: #3a3a3a;
+  font-size: 32px;
+  font-family: vds_bold;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.rotate-2 {
+  margin-top: 60px;
+  font-size: 24px;
+  font-family: vds;
+  letter-spacing: 3px;
+  margin-left: 10px;
+  -ms-transform: rotate(-6deg); /* IE 9 */
+  -webkit-transform: rotate(-6deg); /* Safari 3-8 */
+  transform: rotate(-6deg);
+}
+
+.rotate-3 {
+  font-size: 24px;
+  font-family: vds;
+  letter-spacing: 3px;
+  margin-left: 20px;
+  -ms-transform: rotate(-3deg); /* IE 9 */
+  -webkit-transform: rotate(-3deg); /* Safari 3-8 */
+  transform: rotate(-3deg);
+}
+
+.rotate-4 {
+  font-size: 24px;
+  font-family: vds;
+  letter-spacing: 3px;
+  margin-left: 30px;
+}
+
+.rotate-5 {
+  font-size: 24px;
+  font-family: vds;
+  letter-spacing: 3px;
+  margin-left: 25px;
+  -ms-transform: rotate(3deg); /* IE 9 */
+  -webkit-transform: rotate(3deg); /* Safari 3-8 */
+  transform: rotate(3deg);
+}
+
+.rotate-6 {
+  font-size: 24px;
+  font-family: vds;
+  letter-spacing: 3px;
+  margin-left: 10px;
+  -ms-transform: rotate(6deg); /* IE 9 */
+  -webkit-transform: rotate(6deg); /* Safari 3-8 */
+  transform: rotate(6deg);
+}
+
+/****************Dream*****************/
+
+.title-5 {
+  font-size: 48px;
+  font-family: vds_bold;
+  text-align: center;
+  padding-bottom: 60px;
+  padding-top: 120px;
+}
+
+.job {
+  font-family: vds;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-left: 50px;
+  margin-bottom: 40px;
+  color: #3a3a3a;
+}
+
+.dream-1 {
+
+ float: left;
+ margin-left: 100px;
+ margin-bottom: 30px;
+ }
+
+ .dream-2 {
+   float: left;
+   margin-left: 100px;
+ }
+
+ .dream-3 {
+   float: left;
+   margin-left: 100px;
+ }
+
+/******************Contact*****************/
+.title-6 {
+  font-size: 64px;
+  font-family: simplifica;
+  text-align: center;
+  margin-top: 100px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  letter-spacing: 5px;
+}
+
+.background-contact {
+  background-image: linear-gradient(rgb(215, 255, 175), rgb(175, 255, 253));
+  padding-bottom: 100px;
+}
+
+.text-contact {
+  font-family: simplifica;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+/******************Resume*****************/
+embed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+.background-resume {
+  background-image: linear-gradient(to top right, rgb(215, 255, 175), rgb(175, 255, 253));
+}
